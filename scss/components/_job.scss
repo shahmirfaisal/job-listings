@@ -1,0 +1,99 @@
+.job {
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100rem;
+  display: flex;
+  margin: 0 auto 2.5rem auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+  border-radius: 6px;
+
+  &--featured {
+    border-left: 5px solid map-get($colors, "primary");
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 2.5rem;
+
+    img {
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__company {
+    font-size: 1.4rem;
+    color: map-get($colors, "primary");
+    margin-right: 1.5rem;
+  }
+
+  &__badge {
+    text-transform: uppercase;
+    color: white;
+    border-radius: 100px;
+    padding: 0.5rem 0.8rem 0.3rem 0.8rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &--primary {
+      background-color: map-get($colors, "primary");
+    }
+
+    &--featured {
+      background-color: map-get($colors, "very-dark-grayish-cyan");
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: map-get($colors, "very-dark-grayish-cyan");
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  &__more-info {
+    display: flex;
+    align-items: center;
+    p {
+      font-weight: 500;
+      font-size: 1.4rem;
+      opacity: 0.7;
+    }
+
+    span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: black;
+      opacity: 0.4;
+      border-radius: 50%;
+      margin: 0 1rem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    margin-bottom: 1rem;
+    background-color: map-get($colors, "background");
+    color: map-get($colors, "primary");
+    font-size: 1.3rem;
+    padding: 1rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

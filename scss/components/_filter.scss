@@ -1,0 +1,52 @@
+.filter {
+  background-color: white;
+  flex-basis: 100rem;
+  padding: 2rem 3rem 0 3rem;
+  border-radius: 0.4rem;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  &__tag {
+    display: inline-flex;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    background-color: map-get($colors, "background");
+    color: map-get($colors, "primary");
+    padding: 0.7rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  &__icon {
+    background-color: map-get($colors, "primary");
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($colors, "very-dark-grayish-cyan");
+    }
+  }
+
+  &__clear {
+    color: map-get($colors, "primary");
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform: translateY(-1rem);
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.header {
+  height: 15rem;
+  background: url(../images/bg-header-desktop.svg) map-get($colors, "primary")
+    no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
