@@ -99,7 +99,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto 2.5rem auto;
+  margin: 2.5rem auto 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -237,7 +237,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 5.5rem;
+    margin-top: 5.5rem;
     padding: 3rem 2rem;
   }
   .job__info {
@@ -262,6 +262,6 @@ body {
 }
 
 .main {
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 4rem 2rem;
 }
 /*# sourceMappingURL=main.css.map */

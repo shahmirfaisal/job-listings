@@ -3,7 +3,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   max-width: 120rem;
   display: flex;
-  margin: 0 auto 2.5rem auto;
+  margin: 2.5rem auto 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 4rem;
@@ -112,7 +112,7 @@
       flex-direction: column;
       position: relative;
       align-items: flex-start;
-      margin-bottom: 5.5rem;
+      margin-top: 5.5rem;
       padding: 3rem 2rem;
 
       &__info {
