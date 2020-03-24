@@ -23,24 +23,14 @@ body {
 .header {
   height: 15rem;
   background: url(../images/bg-header-desktop.svg) #5ba4a4 no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .filter {
   background-color: white;
-  -ms-flex-preferred-size: 100rem;
-      flex-basis: 100rem;
+  max-width: 120rem;
   padding: 2rem 3rem 0 3rem;
   border-radius: 0.4rem;
-  margin: 0 2rem;
+  margin: 0 auto 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,8 +40,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -107,7 +97,7 @@ body {
   background-color: white;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 100rem;
+  max-width: 120rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +167,11 @@ body {
   font-size: 2rem;
   color: #2c3a3a;
   margin: 1.5rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.job__title:hover {
+  color: #5ba4a4;
 }
 
 .job__more-info {
@@ -220,14 +215,55 @@ body {
   background-color: #effafa;
   color: #5ba4a4;
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0.7rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.job__tag:hover {
+  background-color: #5ba4a4;
+  color: white;
 }
 
 .job__tag:not(:last-child) {
   margin-right: 1rem;
 }
 
+@media (max-width: 850px) {
+  .job {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 5.5rem;
+    padding: 3rem 2rem;
+  }
+  .job__info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .job__header {
+    margin-top: 1rem;
+  }
+  .job__img {
+    width: 6rem;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .job__img img {
+    width: 100%;
+  }
+}
+
 .main {
-  margin: 8rem 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
 }
 /*# sourceMappingURL=main.css.map */

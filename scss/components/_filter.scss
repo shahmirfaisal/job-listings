@@ -1,13 +1,13 @@
 .filter {
   background-color: white;
-  flex-basis: 100rem;
+  max-width: 120rem;
   padding: 2rem 3rem 0 3rem;
   border-radius: 0.4rem;
-  margin: 0 2rem;
+  margin: 0 auto 2rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
   &__tag {
